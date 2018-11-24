@@ -40,6 +40,16 @@
   animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
+.no-js {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js {
+  visibility: visible;
+  opacity: 1;
+}
+
 @keyframes loaderAnim {
   to {
     opacity: 1;
@@ -524,7 +534,7 @@ body {
 
 .js body {
   opacity: 0;
-  transition: opacity 3s;
+  transition: opacity 0.3s;
 }
 
 .js body.render {
